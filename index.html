@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Casian & Vince — Wedding Invitation</title>
+  <meta name="description" content="Anna & Miguel are getting married — join us!">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="names">
+        <h1>Casian &amp; Vince</h1>
+        <p class="date">June 12, 2026 • 4:00 PM</p>
+      </div>
+      <p class="tagline">A celebration of love &amp; family</p>
+      <div class="hero-cta">
+        <a href="#rsvp" class="btn primary">Reservation</a>
+        <a href="#details" class="btn ghost">Event Details</a>
+      </div>
+    </div>
+    <svg class="ornament" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <defs>
+        <linearGradient id="g" x1="0" x2="1">
+          <stop offset="0" stop-color="rgba(212,175,55,0.9)"/>
+          <stop offset="1" stop-color="rgba(212,175,55,0.6)"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </header>
+
+  <main class="container">
+    <section id="story" class="card accent">
+      <h2>Our Story</h2>
+      <p>We met on a rainy afternoon and found that sunshine follows good coffee and laughter. After years of adventures and quiet nights in, we decided to say "yes" to forever.</p>
+      <div class="two-col">
+        <div>
+          <h3>Proposal</h3>
+          <p>He proposed on a cliffside at sunset — simple, sweet, and perfect.</p>
+        </div>
+        <div>
+          <h3>Join Us</h3>
+          <p>We would be honored to have you celebrate with us.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="card">
+      <h2>Wedding Details</h2>
+      <div class="grid">
+        <div class="detail">
+          <h4>Date & Time</h4>
+          <p>June 12, 2026 • 4:00 PM</p>
+        </div>
+        <div class="detail">
+          <h4>Venue</h4>
+          <p>The Marison Hotel<br>Corner Imelda Roces Ave, Legazpi City, Albay</p>
+        </div>
+        <div class="detail">
+          <h4>Reception</h4>
+          <p>Immediately following the ceremony in the same venue.</p>
+        </div>
+        <div class="detail">
+          <h4>Dress Code</h4>
+          <p>Formal • Classic Elegant</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card subtle">
+      <h2>Gallery</h2>
+      <p class="muted">A few moments captured</p>
+      <div class="gallery-grid">
+  <img src="images/photo1.jpg" alt="Wedding ceremony" class="photo">
+  <img src="images/photo2.jpg" alt="Couple dance" class="photo">
+  <img src="images/photo3.jpg" alt="Family moment" class="photo">
+  <img src="images/photo4.jpg" alt="Reception celebration" class="photo">
+</div>
+
+    </section>
+
+    <section id="rsvp" class="card rsvp-card">
+  <h2>RESERVATION</h2>
+  <p>Please let us know if you can join our celebration.</p>
+
+  <form id="rsvpForm" class="rsvp-form" action="https://formspree.io/f/manpaeeo" method="POST">
+    <div class="form-row">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required placeholder="Your full name">
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" name="_replyto" type="email" required placeholder="yourname@gmail.com">
+    </div>
+
+    <div class="form-row">
+      <label>Attending</label>
+      <label><input type="radio" name="attend" value="Yes" checked> Yes</label>
+      <label><input type="radio" name="attend" value="No"> No</label>
+    </div>
+
+    <div class="form-row">
+      <label for="guests">Number of guests</label>
+      <input id="guests" name="guests" type="number" min="0" value="0">
+    </div>
+
+    <div class="form-row">
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" placeholder="Any dietary notes or messages"></textarea>
+    </div>
+
+    <button type="submit" class="btn primary" id="submitRsvp">Send My Reservation Now</button>
+    <p id="rsvpStatus" class="muted small"></p>
+  </form>
+</section>
+
+
+    <section id="travel" class="card subtle">
+      <h2>Travel & Accommodation</h2>
+      <p>Nearby hotels and transportation details. We recommend booking early.</p>
+      <ul>
+        <li>The Marison Hotel</li>
+        <li>Corner Imelda Roces Ave, Legazpi City, Albay</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ♥ Ceeds for Casian &amp; Vince • © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
