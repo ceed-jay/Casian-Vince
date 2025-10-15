@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     submitBtn.disabled = true;
-    status.textContent = "Sending RSVP…";
+    status.textContent = "Sending your Reservation please wait...";
 
     const formData = new FormData(form);
 
